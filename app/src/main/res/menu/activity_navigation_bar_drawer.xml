@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/item1">
+        <item
+            android:title="Home"
+            android:id="@+id/nav_home"/></group>
+<group android:id="@+id/item4">
+        <item
+            android:id="@+id/menu_filter"
+            android:title="Menu" /></group>
+
+    <group android:id="@+id/it1">
+            <item
+                android:id="@+id/american_ipa"
+                android:visible="false"
+                android:title="       American IPA" /></group>
+    <group android:id="@+id/it2">
+            <item
+            android:id="@+id/american_double"
+                android:visible="false"
+                android:title="       American Double" /></group>
+    <group android:id="@+id/it3">
+            <item
+                android:id="@+id/oatmeal_stout"
+                android:visible="false"
+                android:title="       Oatmeal Stout" />
+    </group>
+    <group android:id="@+id/it4">
+    <item
+                android:id="@+id/american_porter"
+                android:visible="false"
+                android:title="       American Porter" />
+    </group>
+    <group android:id="@+id/item9">
+        <item
+            android:title="Exit"
+            android:id="@+id/nav_logout"/></group>
+</menu>

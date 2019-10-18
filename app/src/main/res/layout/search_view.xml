@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_text"
+        android:padding="4dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/search_text_border"
+        android:hint="type here..."
+        android:textSize="21sp"
+        android:maxLines="1"
+        android:textColor="#000000"
+        android:ems="15"
+        android:textColorHint="#dd424242"
+        android:imeOptions="actionSearch"
+        android:inputType="textAutoComplete|textAutoCorrect">
+        <requestFocus/>
+    </AutoCompleteTextView>
+</RelativeLayout>

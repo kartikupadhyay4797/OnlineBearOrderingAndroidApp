@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mealgaadi.activities.ProductListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:id="@+id/reView"></androidx.recyclerview.widget.RecyclerView>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#000000"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:textSize="14sp"-->
+        <!--android:id="@+id/text_for_null_list"-->
+        <!--android:textAlignment="center"-->
+        <!--android:visibility="gone"-->
+        <!--android:text="Sorry, we are not serving this item at present."/>-->
+
+</FrameLayout>

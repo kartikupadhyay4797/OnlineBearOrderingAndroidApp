@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/splash_screen"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    tools:showIn="@layout/app_bar_navigation_bar"
+    android:orientation="vertical"
+    >
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginLeft="16dp"
+        android:clickable="true"
+        android:id="@+id/menu_icon"
+        android:scaleType="centerInside"
+        android:textColor="#fdd835"
+        android:src="@drawable/menu_icon"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:text="Meal Gaadi"
+            android:textSize="21sp"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+        /></LinearLayout>
+    -->
+    <!--&lt;!&ndash;<android.support.v7.widget.RecyclerView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="8dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_above="@id/search_here"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/reView"&ndash;&gt;-->
+        <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_above="@id/search_here"
+           android:id="@+id/main_fragment"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_here"
+            android:orientation="horizontal"
+            android:layout_above="@id/footer"
+            >
+            </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/footer"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/search_icon"
+                android:clickable="true"
+                android:background="@drawable/footer_all_borders"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:scaleType="centerInside"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/search_icon"/>
+            </RelativeLayout>
+
+            <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/footer_all_borders"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="?attr/actionBarSize"
+    android:gravity="center"
+    >
+    <ImageView
+    android:layout_width="30dp"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:layout_margin="16dp"
+    android:clickable="true"
+    android:id="@+id/cart_top_icon"
+    android:scaleType="centerInside"
+    android:layout_centerHorizontal="true"
+    android:textColor="#fdd835"
+    android:src="@drawable/ic_cart_top"/>
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text=""
+        android:id="@+id/cart_count"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cart_count"
+        android:textColor="#000000"
+        />
+
+</RelativeLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout></LinearLayout></FrameLayout>
